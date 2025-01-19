@@ -1,7 +1,10 @@
+<style>
+h1 {
+  border-bottom: none;
+}
+</style>
+
 # 정선주
-
-
-
 #### E-mail
 sunju635@naver.com
 
@@ -54,18 +57,17 @@ sunju635@naver.com
 - 대상 컴포넌트: 컴포넌트: Ambari, Zookeeper, Infra Solr, HDFS, Ambari Metrix, Yarn, Mapreduce2, Tez, Spark, Hive, Oozie, Sqoop, Hue, Ranger, Zeppelin, Hbase, Pig, Storm, Atlas, Kafka, Druid, Superset, Airflow, Nifi, Trino, Opensearch
 
 **보안 강화**
-- 주요 컴포넌트의 보안 로그 기록을 위한 Audit 플러그인 개발
-  - 컴포넌트들의 동작 방식 및 코드를 분석하여, 오픈소스를 수정하지 않고 플러그인을 추가하여 Audit 로그를 기록 할 수 있도록 함.
-    - 🛠️ 활용 기술
-      - Ambari: Spring security Proxy Authentication Class 추가하여 로그인 로그 기록
-      - Ranger: AoP, Spring Filter 사용하여 접근, 로그인, 유저 권한 관리, 보안 정책 관리 로그 기록  
-      - Hue: Middleware 추가하여 로그인, 유저 권한 관리, 다운로드 로그 기록
-      - Hdfs:  ranger plugin을 활용하여 접근 로그 기록
-      - Hive: AoP를 활용하여, 쿼리 수행 기록
-      - Trino: EventListener Plugin을 추가하여, 쿼리 수행 기록
-      - Hbase: Coprocessor을 추가하여 쿼리 수행 기록
-      - Spark: SparkListenerEvent을 추가 및 Spark Plan, Accumulator를 활용하여 통해 쿼리 수행 기록
-      - Zeppelin: AoP를 활용하여 로그인 로그 기록
+- 주요 컴포넌트의 동작 방식 및 코드를 분석하여, 보안 로그 기록을 위한 Audit 플러그인 개발
+- 🛠️ 활용 기술
+  - Ambari: Spring security Proxy Authentication Class 추가하여 로그인 로그 기록
+  - Ranger: AoP, Spring Filter 사용하여 접근, 로그인, 유저 권한 관리, 보안 정책 관리 로그 기록
+  - Hue: Middleware 추가하여 로그인, 유저 권한 관리, 다운로드 로그 기록
+  - Hdfs:  ranger plugin을 활용하여 접근 로그 기록
+  - Hive: AoP를 활용하여, 쿼리 수행 기록
+  - Trino: EventListener Plugin을 추가하여, 쿼리 수행 기록
+  - Hbase: Coprocessor을 추가하여 쿼리 수행 기록
+  - Spark: SparkListenerEvent을 추가 및 Spark Plan, Accumulator를 활용하여 통해 쿼리 수행 기록
+  - Zeppelin: AoP를 활용하여 로그인 로그 기록
 - 취약점 대응
   - 데이터 플랫폼에서 사용하는 오픈소스 디팬던시 취약점 점검 및 조치
     - 오픈소스 업그레이드 및 호환 관리
