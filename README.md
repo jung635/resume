@@ -96,11 +96,11 @@ sunju635@naver.com
 - 🛠️ 활용 기술: k8s, spinnaker, ELK, Postman test scripts
 
 **데이터 사용자들을 위한 Faas 시스템 개발**
-- 적재된 데이터를 사용한 서비스를, 쉽게 실행가능한 Faas 시스템 개발
+- 데이터 기반의 서비스를 쉽게 관리 가능한 Faas 시스템 개발
 - 🛠️ 활용 기술: k8s, Knative
 
 **Devworks workspace 개발**
-- 적재된 데이터를 활용하여, 코드를 작성하고, 서비스를 실행 할 수 있는 workspace 개발
+- 데이터를 활용한 소스 코드를 작성하고, 빌드 및 실행 할 수 있는 workspace 개발
 - 🛠️ 활용 기술: React, Spring Framework
 
 
